@@ -4,8 +4,11 @@
     "group:linters",
     "group:postcss"
   ],
-  "rangeStrategy": "replace",
   "packageRules": [
+    {
+      "managers": ["npm"],
+      "rangeStrategy": "bump"
+    },
     {
       "groupName": "typescript packages",
       "packageNames": ["typescript", "type-fest"],
