@@ -31,10 +31,17 @@
         "vue-loader"
       ]
     },
-    { "groupName": "asset pipe packages", "packagePatterns": ["^@asset-pipe/"] },
+    {
+      "groupName": "asset pipe packages",
+      "packagePatterns": ["^@asset-pipe/"]
+    },
     {
       "groupName": "podium packages",
-      "packagePatterns": ["^@podium/", "^@finn-no/layout-app", "^@finn-no/podlet-app"],
+      "packagePatterns": [
+        "^@podium/",
+        "^@finn-no/layout-app",
+        "^@finn-no/podlet-app"
+      ],
       "packageNames": ["@finn-no/express-layout", "@finn-no/express-podlet"]
     },
     { "groupName": "troika packages", "packagePatterns": ["^@finn-no/troika-"] }
