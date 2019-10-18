@@ -1,5 +1,9 @@
 {
-  "extends": ["github>finn-no/renovate-presets:base", "group:linters", "group:postcss"],
+  "extends": [
+    "github>finn-no/renovate-presets:base",
+    "group:linters",
+    "group:postcss"
+  ],
   "packageRules": [
     {
       "groupName": "typescript packages",
@@ -8,9 +12,7 @@
     },
     {
       "groupName": "reach packages",
-      "packagePatterns": [
-        "^@reach/"
-      ]
+      "packagePatterns": ["^@reach/"]
     }
   ]
 }
