@@ -4,6 +4,7 @@
     "group:linters",
     "group:postcss"
   ],
+  "rangeStrategy": "replace",
   "packageRules": [
     {
       "groupName": "typescript packages",
