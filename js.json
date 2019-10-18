@@ -8,9 +8,7 @@
     {
       "groupName": "typescript packages",
       "packageNames": ["typescript", "type-fest"],
-"packagePatterns": [
-        "^@types/"
-      ]
+      "packagePatterns": ["^@types/"]
     },
     {
       "groupName": "reach packages",
