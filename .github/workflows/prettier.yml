@@ -1,4 +1,4 @@
-name: Prettier
+name: prettier
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js 12
+    - name: use node.js 12
       uses: actions/setup-node@v1
       with:
         node-version: 12
