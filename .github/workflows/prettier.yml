@@ -23,8 +23,8 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "chore(prettier): format code" -a
-    - name: Push changes
+        git commit -am "chore(prettier): format code"
+    - name: push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
