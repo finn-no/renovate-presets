@@ -5,19 +5,14 @@
     "group:postcss"
   ],
   "packageRules": [
-    {
-      "managers": ["npm"],
-      "rangeStrategy": "bump"
-    },
+    {      "managers": ["npm"],      "rangeStrategy": "bump"    },
     {
       "groupName": "typescript packages",
       "packageNames": ["typescript", "type-fest"],
       "packagePatterns": ["^@types/"]
     },
     {
-      "groupName": "reach packages",
-      "packagePatterns": ["^@reach/"]
-    },
+      "groupName": "reach packages",      "packagePatterns": ["^@reach/"]    },
     {
       "groupName": "webpack packages",
       "packagePatterns": ["^webpack", "-webpack-plugin$"],
@@ -35,9 +30,7 @@
       ]
     },
     {
-      "groupName": "asset pipe packages",
-      "packagePatterns": ["^@asset-pipe/"]
-    },
+      "groupName": "asset pipe packages",      "packagePatterns": ["^@asset-pipe/"]    },
     {
       "groupName": "podium packages",
       "packagePatterns": [
