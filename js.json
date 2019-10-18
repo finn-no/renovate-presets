@@ -8,7 +8,9 @@
     {
       "groupName": "typescript packages",
       "packageNames": ["typescript", "type-fest"],
-      "sourceUrlPrefixes": ["https://github.com/DefinitelyTyped/"]
+"packagePatterns": [
+        "^@types/"
+      ]
     },
     {
       "groupName": "reach packages",
