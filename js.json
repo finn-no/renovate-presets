@@ -19,8 +19,8 @@
       "groupName": "webpack packages",
       "packagePatterns": ["^webpack", "-webpack-plugin$"],
       "packageNames": [
-        "babel-loader", 
-        "css-loader", 
+        "babel-loader",
+        "css-loader",
         "file-loader",
         "mini-css-extract-plugin",
         "postcss-loader",
@@ -35,6 +35,6 @@
       "groupName": "podium packages",
       "packagePatterns": ["^@podium/"]
     },
-    {"groupName": "troika packages", "packagePatterns": ["^@finn-no/troika-"]}
+    { "groupName": "troika packages", "packagePatterns": ["^@finn-no/troika-"] }
   ]
 }
