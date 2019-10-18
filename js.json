@@ -1,16 +1,14 @@
 {
-    "extends": [
-        "github>finn-no/renovate-presets:base"
-    ],
-    "packageRules": [
-      {
-        "groupName": "typescript packages",
-        "packageNames": ["typescript", "type-fest"],
-        "packagePatterns": ["^@types/"]
-      },
-      {
-        "groupName": "linter packages",
-        "extends": ["monorepo:typescript-eslint", "packages:linters"]
-      }
-    ]
+  "extends": ["github>finn-no/renovate-presets:base"],
+  "packageRules": [
+    {
+      "groupName": "typescript packages",
+      "packageNames": ["typescript", "type-fest"],
+      "packagePatterns": ["^@types/"]
+    },
+    {
+      "groupName": "linter packages",
+      "extends": ["monorepo:typescript-eslint", "packages:linters"]
+    }
+  ]
 }
