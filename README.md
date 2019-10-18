@@ -13,3 +13,16 @@ This preset extends the default `config:base` preset in renovate, while adding a
   ]
 }
 ```
+
+## js
+
+This preset extends `base` and sets up additional options that makes sense for JS apps and libraries.
+
+### Usage
+```json
+{
+  "extends": [
+    "github>finn-no/renovate-presets:js"
+  ]
+}
+```
