@@ -24,7 +24,9 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -am "chore(prettier): format code"
+      continue-on-error: true
     - name: push changes
       uses: ad-m/github-push-action@master
+      if: success()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
