@@ -1,5 +1,5 @@
 {
-  "extends": ["github>finn-no/renovate-presets:base"],
+  "extends": ["github>finn-no/renovate-presets:base", "group:linters", "group:postcss"],
   "packageRules": [
     {
       "groupName": "typescript packages",
@@ -7,8 +7,10 @@
       "sourceUrlPrefixes": ["https://github.com/DefinitelyTyped/"]
     },
     {
-      "groupName": "linter packages",
-      "extends": ["monorepo:typescript-eslint", "packages:linters"]
+      "groupName": "reach packages",
+      "packagePatterns": [
+        "^@reach/"
+      ]
     }
   ]
 }
