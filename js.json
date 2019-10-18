@@ -14,6 +14,27 @@
     {
       "groupName": "reach packages",
       "packagePatterns": ["^@reach/"]
-    }
+    },
+    {
+      "groupName": "webpack packages",
+      "packagePatterns": ["^webpack", "-webpack-plugin$"],
+      "packageNames": [
+        "babel-loader", 
+        "css-loader", 
+        "file-loader",
+        "mini-css-extract-plugin",
+        "postcss-loader",
+        "raw-loader",
+        "sass-loader",
+        "style-loader",
+        "url-loader",
+        "vue-loader"
+      ]
+    },
+    {
+      "groupName": "podium packages",
+      "packagePatterns": ["^@podium/"]
+    },
+    {"groupName": "troika packages", "packagePatterns": ["^@finn-no/troika-"]}
   ]
 }
