@@ -16,6 +16,16 @@
       "packagePatterns": ["^@reach/"]
     },
     {
+      "extends": ["monorepo:react"],
+      "groupName": "react packages",
+      "packageNames": ["prop-types"]
+    },
+    {
+      "groupName": "grunt packages",
+      "packagePatterns": ["^grunt-"],
+      "packageNames": ["grunt", "load-grunt-tasks"]
+    },
+    {
       "groupName": "webpack packages",
       "packagePatterns": ["^webpack", "-webpack-plugin$"],
       "packageNames": [
@@ -23,9 +33,11 @@
         "css-loader",
         "file-loader",
         "mini-css-extract-plugin",
+        "mustache-loader",
         "postcss-loader",
         "raw-loader",
         "sass-loader",
+        "source-map-loader",
         "style-loader",
         "url-loader",
         "vue-loader"
