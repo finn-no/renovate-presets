@@ -1,5 +1,5 @@
 {
   "extends": ["config:base", ":maintainLockFilesMonthly"],
-  "ignorePresets": [":ignoreModulesAndTests"],
+  "ignorePresets": [":ignoreModulesAndTests", ":prHourlyLimit2"],
   "ignorePaths": []
 }
