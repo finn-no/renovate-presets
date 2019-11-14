@@ -48,11 +48,11 @@
       "packagePatterns": ["^rollup"]
     },
     {
-      "groupName": "asset pipe packages",
+      "groupName": "@asset-pipe packages",
       "packagePatterns": ["^@asset-pipe/"]
     },
     {
-      "groupName": "podium packages",
+      "groupName": "@podium packages",
       "packagePatterns": [
         "^@podium/",
         "^@finn-no/layout-app",
@@ -60,6 +60,6 @@
       ],
       "packageNames": ["@finn-no/express-layout", "@finn-no/express-podlet"]
     },
-    { "groupName": "troika packages", "packagePatterns": ["^@finn-no/troika-"] }
+    { "groupName": "@finn-no/troika packages", "packagePatterns": ["^@finn-no/troika-"] }
   ]
 }
