@@ -4,62 +4,78 @@
     "group:linters",
     "group:postcss"
   ],
-  "packageRules": [
-    { "managers": ["npm"], "rangeStrategy": "bump" },
-    {
-      "groupName": "typescript packages",
-      "packageNames": ["typescript", "type-fest"],
-      "packagePatterns": ["^@types/"]
-    },
-    {
-      "groupName": "reach packages",
-      "packagePatterns": ["^@reach/"]
-    },
-    {
-      "extends": ["monorepo:react"],
-      "groupName": "react packages",
-      "packageNames": ["prop-types"]
-    },
-    {
-      "groupName": "grunt packages",
-      "packagePatterns": ["^grunt-"],
-      "packageNames": ["grunt", "load-grunt-tasks"]
-    },
-    {
-      "groupName": "webpack packages",
-      "packagePatterns": ["^webpack", "-webpack-plugin$"],
-      "packageNames": [
-        "babel-loader",
-        "css-loader",
-        "file-loader",
-        "mini-css-extract-plugin",
-        "mustache-loader",
-        "postcss-loader",
-        "raw-loader",
-        "sass-loader",
-        "source-map-loader",
-        "style-loader",
-        "url-loader",
-        "vue-loader"
-      ]
-    },
-    {
-      "groupName": "rollup packages",
-      "packagePatterns": ["^rollup"]
-    },
-    {
-      "groupName": "@asset-pipe packages",
-      "packagePatterns": ["^@asset-pipe/"]
-    },
-    {
-      "groupName": "@podium packages",
-      "packagePatterns": [
-        "^@podium/",
-        "^@finn-no/layout-app",
-        "^@finn-no/podlet-app"
-      ],
-      "packageNames": ["@finn-no/express-layout", "@finn-no/express-podlet"]
-    },
-    { "groupName": "@finn-no/troika packages", "packagePatterns": ["^@finn-no/troika-"] }
-  ]
+  "packageRules": [{
+    "depTypeList": ["dependencies"],
+    "automerge": true,
+    "major": {
+      "automerge": false
+    }
+  },
+  {
+    "depTypeList": ["devDependencies"],
+    "schedule": ["before 4am on sunday"],
+    "commitMessage": "Dev dependency {{depName}} updated to version {{newValue}}",
+    "prTitle": "Dev dependency update: {{depName}}",
+    "automerge": true,
+    "major": {
+      "automerge": false
+    }
+  },
+  { "managers": ["npm"], "rangeStrategy": "bump" },
+  {
+    "groupName": "typescript packages",
+    "packageNames": ["typescript", "type-fest"],
+    "packagePatterns": ["^@types/"]
+  },
+  {
+    "groupName": "reach packages",
+    "packagePatterns": ["^@reach/"]
+  },
+  {
+    "extends": ["monorepo:react"],
+    "groupName": "react packages",
+    "packageNames": ["prop-types"]
+  },
+  {
+    "groupName": "grunt packages",
+    "packagePatterns": ["^grunt-"],
+    "packageNames": ["grunt", "load-grunt-tasks"]
+  },
+  {
+    "groupName": "webpack packages",
+    "packagePatterns": ["^webpack", "-webpack-plugin$"],
+    "packageNames": [
+      "babel-loader",
+      "css-loader",
+      "file-loader",
+      "mini-css-extract-plugin",
+      "mustache-loader",
+      "postcss-loader",
+      "raw-loader",
+      "sass-loader",
+      "source-map-loader",
+      "style-loader",
+      "url-loader",
+      "vue-loader"
+    ]
+  },
+  {
+    "groupName": "rollup packages",
+    "packagePatterns": ["^rollup"]
+  },
+  {
+    "groupName": "@asset-pipe packages",
+    "packagePatterns": ["^@asset-pipe/"]
+  },
+  {
+    "groupName": "@podium packages",
+    "packagePatterns": [
+      "^@podium/",
+      "^@finn-no/layout-app",
+      "^@finn-no/podlet-app"
+    ],
+    "packageNames": ["@finn-no/express-layout", "@finn-no/express-podlet"]
+  },
+  { "groupName": "@finn-no/troika packages", "packagePatterns": ["^@finn-no/troika-"]
+  }]
 }
