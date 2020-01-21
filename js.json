@@ -4,6 +4,10 @@
     "group:linters",
     "group:postcss"
   ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "on friday"
+  },
   "packageRules": [{
     "depTypeList": ["dependencies"],
     "automerge": true,
