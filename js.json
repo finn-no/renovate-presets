@@ -19,7 +19,7 @@
     {
       "depTypeList": ["devDependencies"],
       "schedule": ["before 4am on sunday"],
-      "commitMessageTopic": "Dev dependency {{depName}}",
+      "commitMessageTopic": "dev dependency {{depName}}",
       "automerge": true,
       "major": {
         "automerge": false
