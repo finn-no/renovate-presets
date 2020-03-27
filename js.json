@@ -18,8 +18,7 @@
   {
     "depTypeList": ["devDependencies"],
     "schedule": ["before 4am on sunday"],
-    "commitMessage": "Dev dependency {{depName}} updated to version {{newValue}}",
-    "prTitle": "Dev dependency update: {{depName}}",
+    "commitMessageTopic": "Dev dependency {{depName}}",
     "automerge": true,
     "major": {
       "automerge": false
