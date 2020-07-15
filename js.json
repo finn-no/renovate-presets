@@ -65,7 +65,7 @@
     },
     {
       "groupName": "rollup packages",
-      "packagePatterns": ["^rollup"]
+      "packagePatterns": ["^@rollup/", "^rollup"]
     },
     {
       "groupName": "@asset-pipe packages",
