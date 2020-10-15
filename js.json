@@ -4,6 +4,7 @@
     "group:linters",
     "group:postcss"
   ],
+  "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": "after 10pm on sunday"
