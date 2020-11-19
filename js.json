@@ -13,7 +13,7 @@
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
-      "rangeStrategy": "bump",
+      "rangeStrategy": "update-lockfile",
       "automerge": true,
       "major": {
         "automerge": false
@@ -23,7 +23,7 @@
       "depTypeList": ["devDependencies"],
       "schedule": ["before 4am on sunday"],
       "commitMessageTopic": "dev dependency {{depName}}",
-      "rangeStrategy": "bump",
+      "rangeStrategy": "update-lockfile",
       "automerge": true,
       "major": {
         "automerge": false
