@@ -22,12 +22,12 @@
       "depTypeList": ["devDependencies"],
       "schedule": ["before 4am on sunday"],
       "commitMessageTopic": "dev dependency {{depName}}",
+      "rangeStrategy": "bump",
       "automerge": true,
       "major": {
         "automerge": false
       }
     },
-    { "managers": ["npm"], "rangeStrategy": "bump" },
     {
       "groupName": "typescript packages",
       "packageNames": ["typescript", "type-fest"],
