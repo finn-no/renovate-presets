@@ -2,7 +2,8 @@
   "extends": [
     "github>finn-no/renovate-presets:base",
     "group:linters",
-    "group:postcss"
+    "group:postcss",
+    ":widenPeerDependencies"
   ],
   "dependencyDashboard": true,
   "lockFileMaintenance": {
