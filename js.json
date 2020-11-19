@@ -13,6 +13,7 @@
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
+      "rangeStrategy": "bump",
       "automerge": true,
       "major": {
         "automerge": false
