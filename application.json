@@ -1,9 +1,16 @@
 {
   "extends": ["config:base"],
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "before 4am every saturday",
+    "automerge": true
+  },
   "packageRules": [
     {
       "depTypeList": ["dependencies"],
       "schedule": ["after 6pm every weekday, before 6am every weekday"],
+      "rangeStrategy": "auto",
       "automerge": true,
       "major": {
         "automerge": false
@@ -12,23 +19,13 @@
     {
       "depTypeList": ["devDependencies"],
       "schedule": ["before 4am on the first day of the month"],
+      "rangeStrategy": "auto",
       "automerge": true
     },
     {
-      "groupName": "Semantic Release packages",
-      "packagePatterns": ["^@semantic-release/", "semantic-release"]
-    },
-    {
-      "groupName": "ESlint and Prettier packages",
-      "packagePatterns": [
-        "eslint-config-airbnb-base",
-        "eslint-config-prettier",
-        "eslint-plugin-prettier",
-        "eslint-plugin-import",
-        "@babel/eslint-parser",
-        "prettier",
-        "eslint"
-      ]
+      "groupName": "Development dependencies",
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
     },
     {
       "groupName": "FINN packages",
@@ -41,6 +38,14 @@
     {
       "groupName": "Eik packages",
       "packagePatterns": ["^@eik/"]
+    },    
+    {
+      "groupName": "Troika packages",
+      "packagePatterns": ["^@finn-no/troika-"]
+    },    
+    {
+      "groupName": "Fabric packages",
+      "packagePatterns": ["^@fabric-ds/"]
     }
   ]
 }
