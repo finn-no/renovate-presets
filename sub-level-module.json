@@ -33,11 +33,11 @@
     {
       "groupName": "FINN packages",
       "packagePatterns": ["^@finn-no/"]
-    },    
+    },
     {
       "groupName": "Podium packages",
       "packagePatterns": ["^@podium/"]
-    },    
+    },
     {
       "groupName": "Eik packages",
       "packagePatterns": ["^@eik/"]
