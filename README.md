@@ -43,7 +43,7 @@ To use the preset for aplications within another module, add the following confi
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>finn-no/application"]
+  "extends": ["github>finn-no/renovate-presets:application"]
 }
 ```
 
