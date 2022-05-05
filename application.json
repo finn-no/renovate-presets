@@ -1,51 +1,38 @@
 {
-  "extends": ["config:base"],
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": "before 4am every saturday",
+    "schedule": "before 6am every saturday",
     "automerge": true
   },
   "packageRules": [
     {
+      "groupName": "Dev Dependencies",
+      "depTypeList": ["devDependencies"],
+      "schedule": ["before 6am on the first day of the month"],
+      "rangeStrategy": "pin",
+      "automerge": true
+    },
+    {
+      "groupName": "Internal Dependencies",
       "depTypeList": ["dependencies"],
-      "schedule": ["after 6pm every weekday, before 6am every weekday"],
-      "rangeStrategy": "auto",
+      "schedule": ["before 6am every weekday"],
+      "packagePatterns": ["^@finn-no/", "^@podium/", "^@eik/", "^@fabric-ds/", "^@metrics/"],
+      "rangeStrategy": "pin",
       "automerge": true,
       "major": {
         "automerge": false
       }
     },
     {
-      "depTypeList": ["devDependencies"],
-      "schedule": ["before 4am on the first day of the month"],
-      "rangeStrategy": "auto",
-      "automerge": true
-    },
-    {
-      "groupName": "Development dependencies",
-      "matchDepTypes": ["devDependencies"],
-      "automerge": true
-    },
-    {
-      "groupName": "FINN packages",
-      "packagePatterns": ["^@finn-no/"]
-    },
-    {
-      "groupName": "Podium packages",
-      "packagePatterns": ["^@podium/"]
-    },
-    {
-      "groupName": "Eik packages",
-      "packagePatterns": ["^@eik/"]
-    },
-    {
-      "groupName": "Troika packages",
-      "packagePatterns": ["^@finn-no/troika-"]
-    },
-    {
-      "groupName": "Fabric packages",
-      "packagePatterns": ["^@fabric-ds/"]
+      "groupName": "External Dependencies",
+      "depTypeList": ["dependencies"],
+      "schedule": ["before 6am every sunday"],
+      "rangeStrategy": "pin",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
