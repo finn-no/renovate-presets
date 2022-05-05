@@ -17,7 +17,13 @@
       "groupName": "Internal Dependencies",
       "depTypeList": ["dependencies"],
       "schedule": ["before 6am every weekday"],
-      "packagePatterns": ["^@finn-no/", "^@podium/", "^@eik/", "^@fabric-ds/", "^@metrics/"],
+      "packagePatterns": [
+        "^@finn-no/",
+        "^@podium/",
+        "^@eik/",
+        "^@fabric-ds/",
+        "^@metrics/"
+      ],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
