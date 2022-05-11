@@ -9,7 +9,13 @@
     {
       "groupName": "Dev Dependencies",
       "matchDepTypes": ["devDependencies"],
-      "excludePackagePrefixes": ["@finn-no", "@podium", "@eik", "@fabric-ds", "@metrics"],
+      "excludePackagePrefixes": [
+        "@finn-no",
+        "@podium",
+        "@eik",
+        "@fabric-ds",
+        "@metrics"
+      ],
       "schedule": ["before 6am on the first day of the month"],
       "rangeStrategy": "pin",
       "automerge": true
@@ -17,7 +23,13 @@
     {
       "groupName": "External Dependencies",
       "matchDepTypes": ["dependencies"],
-      "excludePackagePrefixes": ["@finn-no", "@podium", "@eik", "@fabric-ds", "@metrics"],
+      "excludePackagePrefixes": [
+        "@finn-no",
+        "@podium",
+        "@eik",
+        "@fabric-ds",
+        "@metrics"
+      ],
       "schedule": ["before 6am every sunday"],
       "rangeStrategy": "pin",
       "automerge": true,
@@ -28,7 +40,13 @@
     {
       "groupName": "Internal Dependencies",
       "schedule": ["before 6am every weekday"],
-      "matchPackagePrefixes": ["@finn-no", "@podium", "@eik", "@fabric-ds", "@metrics"],
+      "matchPackagePrefixes": [
+        "@finn-no",
+        "@podium",
+        "@eik",
+        "@fabric-ds",
+        "@metrics"
+      ],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
