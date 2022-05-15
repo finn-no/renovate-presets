@@ -30,7 +30,7 @@
         "@fabric-ds",
         "@metrics"
       ],
-      "schedule": ["before 6am every sunday"],
+      "schedule": ["every weekend"],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
@@ -39,7 +39,11 @@
     },
     {
       "groupName": "Internal Dependencies",
-      "schedule": ["before 6am every weekday"],
+      "schedule": [
+        "after 6pm every weekday",
+    	"before 6am every weekday",
+    	"every weekend"
+      ],
       "matchPackagePrefixes": [
         "@finn-no",
         "@podium",
