@@ -1,46 +1,51 @@
 {
-  "extends": ["config:base"],
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "depTypeList": ["dependencies"],
+      "groupName": "Dev Dependencies",
+      "matchDepTypes": ["devDependencies"],
+      "excludePackagePrefixes": [
+        "@finn-no",
+        "@podium",
+        "@eik",
+        "@fabric-ds",
+        "@metrics"
+      ],
+      "schedule": ["before 6am on the first day of the month"],
+      "rangeStrategy": "pin",
+      "automerge": true
+    },
+    {
+      "groupName": "External Dependencies",
+      "matchDepTypes": ["dependencies"],
+      "excludePackagePrefixes": [
+        "@finn-no",
+        "@podium",
+        "@eik",
+        "@fabric-ds",
+        "@metrics"
+      ],
+      "schedule": ["every weekend"],
+      "rangeStrategy": "pin",
       "automerge": true,
       "major": {
         "automerge": false
       }
     },
     {
-      "depTypeList": ["devDependencies"],
-      "schedule": ["before 4am on the first day of the month"],
-      "automerge": true
-    },
-    {
-      "groupName": "Semantic Release packages",
-      "packagePatterns": ["^@semantic-release/", "semantic-release"]
-    },
-    {
-      "groupName": "ESlint and Prettier packages",
-      "packagePatterns": [
-        "eslint-config-airbnb-base",
-        "eslint-config-prettier",
-        "eslint-plugin-prettier",
-        "eslint-plugin-import",
-        "@babel/eslint-parser",
-        "prettier",
-        "eslint"
-      ]
-    },
-    {
-      "groupName": "FINN packages",
-      "packagePatterns": ["^@finn-no/"]
-    },
-    {
-      "groupName": "Podium packages",
-      "packagePatterns": ["^@podium/"]
-    },
-    {
-      "groupName": "Eik packages",
-      "packagePatterns": ["^@eik/"]
+      "groupName": "Internal Dependencies",
+      "matchPackagePrefixes": [
+        "@finn-no",
+        "@podium",
+        "@eik",
+        "@fabric-ds",
+        "@metrics"
+      ],
+      "rangeStrategy": "pin",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
