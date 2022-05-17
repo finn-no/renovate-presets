@@ -36,8 +36,8 @@
       "groupName": "Internal Dependencies",
       "schedule": [
         "after 6pm every weekday",
-    	  "before 6am every weekday",
-    	  "every weekend"
+        "before 6am every weekday",
+        "every weekend"
       ],
       "matchPackagePrefixes": [
         "@finn-no",
