@@ -18,12 +18,12 @@ As an example lets say we have an application dependeing on a set of modules whe
 
 Here both `@finn-no/module-a` and `@finn-no/module-a` depend on the same `3rd-party-dependency`.
 
-If we were to use the default configuration from Renovate Bot to keep our application, `@finn-no/module-a` and `@finn-no/module-b` up to date, the following will happen when we have Semantic Release in our setup and there is a new version of the `3rd-party-dependency`: 
+If we were to use the default configuration from Renovate Bot to keep our application, `@finn-no/module-a` and `@finn-no/module-b` up to date, the following will happen when we have Semantic Release in our setup and there is a new version of the `3rd-party-dependency`:
 
- * `@finn-no/module-a` will get a PR with an update of the `3rd-party-dependency` and when merged a new release of `@finn-no/module-a` will be cut. 
- * The release of `@finn-no/module-a` will create a new PR in the application. 
- * Meanwhile `@finn-no/module-b` will also get a PR with an update of the `3rd-party-dependency` and when merged a new release of `@finn-no/module-b` will be cut. 
- * The release of `@finn-no/module-b` will again create a new PR in `@finn-no/module-a` and cause a new release of `@finn-no/module-a` when merged. Which again will create a new PR in the application.
+- `@finn-no/module-a` will get a PR with an update of the `3rd-party-dependency` and when merged a new release of `@finn-no/module-a` will be cut.
+- The release of `@finn-no/module-a` will create a new PR in the application.
+- Meanwhile `@finn-no/module-b` will also get a PR with an update of the `3rd-party-dependency` and when merged a new release of `@finn-no/module-b` will be cut.
+- The release of `@finn-no/module-b` will again create a new PR in `@finn-no/module-a` and cause a new release of `@finn-no/module-a` when merged. Which again will create a new PR in the application.
 
 In other words; Due to both `@finn-no/module-a` and `@finn-no/module-b` depending on the same `3rd-party-dependency` an update of `3rd-party-dependency` will cause two releases of `@finn-no/module-a` and two dependency updates in the application.
 
@@ -47,13 +47,13 @@ In short; `@finn-no/module-a` is a "top level module" which, mostly common, an `
 
 ## Overall dependency update strategy
 
-In short; Multiple dependencies is grouped in to larger PRs instead of single PRs for each dependency. Then "sub level modules" receive and merge dependencies as they arrive. "Top level modules" receive and merge dependencies on a less frequent schedule. Applications receive and merge dependencies on an even less frequent schedule. 
+In short; Multiple dependencies is grouped in to larger PRs instead of single PRs for each dependency. Then "sub level modules" receive and merge dependencies as they arrive. "Top level modules" receive and merge dependencies on a less frequent schedule. Applications receive and merge dependencies on an even less frequent schedule.
 
 This more or less removes the problem outlined in the considerations section because the following will then happen:
 
- * When there is an update of `3rd-party-dependency`, `@finn-no/module-b` will get an PR immediately and a new release of `@finn-no/module-b` will be cut.
- * At a later point `@finn-no/module-a` will get one PR containing an update of both `3rd-party-dependency` and `@finn-no/module-b` and when merged a new release will be cut.
- * At a even later point the application will get one PR with an update of `@finn-no/module-a`.
+- When there is an update of `3rd-party-dependency`, `@finn-no/module-b` will get an PR immediately and a new release of `@finn-no/module-b` will be cut.
+- At a later point `@finn-no/module-a` will get one PR containing an update of both `3rd-party-dependency` and `@finn-no/module-b` and when merged a new release will be cut.
+- At a even later point the application will get one PR with an update of `@finn-no/module-a`.
 
 Development dependencies is received and merged even less frequent than dependencies.
 
@@ -61,7 +61,7 @@ Development dependencies is received and merged even less frequent than dependen
 
 Applications are running servers which is deployed to production and serve somewhat of a API or web service. Applications normaly consume top level modules or 3rd party modules.
 
-Applications have all their dependencies grouped into one group which is updated once every weekend. 
+Applications have all their dependencies grouped into one group which is updated once every weekend.
 
 To use the preset for aplications within another module, add the following config to `renovate.json`:
 
