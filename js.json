@@ -82,10 +82,6 @@
         "^@finn-no/podlet-app"
       ],
       "packageNames": ["@finn-no/express-layout", "@finn-no/express-podlet"]
-    },
-    {
-      "groupName": "@finn-no/troika packages",
-      "packagePatterns": ["^@finn-no/troika-"]
     }
   ]
 }

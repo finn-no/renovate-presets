@@ -30,7 +30,7 @@
         "@fabric-ds",
         "@metrics"
       ],
-      "schedule": ["every weekend"],
+      "schedule": ["after 6pm on sunday"],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
@@ -42,7 +42,7 @@
       "schedule": [
         "after 6pm every weekday",
         "before 6am every weekday",
-        "every weekend"
+        "after 6am on sunday"
       ],
       "matchPackagePrefixes": [
         "@finn-no",
