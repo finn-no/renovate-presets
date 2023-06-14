@@ -2,7 +2,7 @@
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": "before 6am every saturday",
+    "schedule": "before 6pm every sunday",
     "automerge": true
   },
   "packageRules": [
@@ -42,7 +42,7 @@
       "schedule": [
         "after 6pm every weekday",
         "before 6am every weekday",
-        "after 6am on sunday"
+        "after 6pm on sunday"
       ],
       "matchPackagePrefixes": [
         "@finn-no",
