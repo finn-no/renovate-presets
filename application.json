@@ -2,7 +2,7 @@
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": "before 6am every saturday",
+    "schedule": "before 6pm every sunday",
     "automerge": true
   },
   "packageRules": [
@@ -30,7 +30,7 @@
         "@fabric-ds",
         "@metrics"
       ],
-      "schedule": ["every weekend"],
+      "schedule": ["after 6pm on sunday"],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
@@ -42,7 +42,7 @@
       "schedule": [
         "after 6pm every weekday",
         "before 6am every weekday",
-        "every weekend"
+        "after 6pm on sunday"
       ],
       "matchPackagePrefixes": [
         "@finn-no",

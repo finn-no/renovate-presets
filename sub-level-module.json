@@ -25,7 +25,7 @@
         "@fabric-ds",
         "@metrics"
       ],
-      "schedule": ["every weekend"],
+      "schedule": ["after 6pm on sunday"],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
