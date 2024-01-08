@@ -9,7 +9,9 @@
         "@podium",
         "@eik",
         "@fabric-ds",
-        "@metrics"
+        "@metrics",
+        "@warp-ds",
+        "@borealis"
       ],
       "schedule": ["before 6am on the first day of the month"],
       "rangeStrategy": "pin",
@@ -23,7 +25,9 @@
         "@podium",
         "@eik",
         "@fabric-ds",
-        "@metrics"
+        "@metrics",
+        "@warp-ds",
+        "@borealis"
       ],
       "schedule": ["after 6pm on sunday"],
       "rangeStrategy": "pin",
@@ -39,7 +43,9 @@
         "@podium",
         "@eik",
         "@fabric-ds",
-        "@metrics"
+        "@metrics",
+        "@warp-ds",
+        "@borealis"
       ],
       "rangeStrategy": "pin",
       "automerge": true,
