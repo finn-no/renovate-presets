@@ -14,6 +14,7 @@
         "@borealis"
       ],
       "schedule": ["before 6am on the first day of the month"],
+      "minimumReleaseAge": "1 day",
       "rangeStrategy": "pin",
       "automerge": true
     },
@@ -30,6 +31,7 @@
         "@borealis"
       ],
       "schedule": ["after 6pm on sunday"],
+      "minimumReleaseAge": "1 day",
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {

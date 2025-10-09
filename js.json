@@ -14,6 +14,7 @@
     {
       "depTypeList": ["dependencies"],
       "rangeStrategy": "update-lockfile",
+      "minimumReleaseAge": "1 day",
       "automerge": true,
       "major": {
         "automerge": false
@@ -22,6 +23,7 @@
     {
       "depTypeList": ["devDependencies"],
       "schedule": ["before 4am on sunday"],
+      "minimumReleaseAge": "1 day",
       "commitMessageTopic": "dev dependency {{depName}}",
       "rangeStrategy": "update-lockfile",
       "automerge": true,
@@ -31,25 +33,30 @@
     },
     {
       "groupName": "typescript packages",
+      "minimumReleaseAge": "1 day",
       "packageNames": ["typescript", "type-fest"],
       "packagePatterns": ["^@types/"]
     },
     {
       "groupName": "reach packages",
+      "minimumReleaseAge": "1 day",
       "packagePatterns": ["^@reach/"]
     },
     {
       "extends": ["monorepo:react"],
+      "minimumReleaseAge": "1 day",
       "groupName": "react packages",
       "packageNames": ["prop-types"]
     },
     {
       "groupName": "grunt packages",
+      "minimumReleaseAge": "1 day",
       "packagePatterns": ["^grunt-"],
       "packageNames": ["grunt", "load-grunt-tasks"]
     },
     {
       "groupName": "webpack packages",
+      "minimumReleaseAge": "1 day",
       "packagePatterns": ["^webpack", "-webpack-plugin$"],
       "packageNames": [
         "babel-loader",
@@ -68,6 +75,7 @@
     },
     {
       "groupName": "rollup packages",
+      "minimumReleaseAge": "1 day",
       "packagePatterns": ["^@rollup/", "^rollup"]
     },
     {
