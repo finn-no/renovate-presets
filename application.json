@@ -8,7 +8,7 @@
   "packageRules": [
     {
       "groupName": "Dev Dependencies",
-      "matchDepTypes": ["devDependencies", "pnpm.catalog.default"],
+      "matchDepTypes": ["devDependencies"],
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
@@ -24,7 +24,7 @@
     },
     {
       "groupName": "External Dependencies",
-      "matchDepTypes": ["dependencies", "pnpm.catalog.default"],
+      "matchDepTypes": ["dependencies""],
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
@@ -57,6 +57,16 @@
         "@warp-ds",
         "@borealis"
       ],
+      "rangeStrategy": "pin",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    },
+    {
+      "groupName": "Default version catalog dependencies",
+      "matchDepTypes": ["pnpm.catalog.default"],
+      "schedule": ["after 6pm on sunday"],
       "rangeStrategy": "pin",
       "automerge": true,
       "major": {
