@@ -8,7 +8,7 @@
   "packageRules": [
     {
       "groupName": "Dev Dependencies",
-      "matchDepTypes": ["devDependencies"],
+      "matchDepTypes": ["devDependencies", "pnpm.catalog.default"],
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
@@ -24,7 +24,7 @@
     },
     {
       "groupName": "External Dependencies",
-      "matchDepTypes": ["dependencies"],
+      "matchDepTypes": ["dependencies", "pnpm.catalog.default"],
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
