@@ -24,7 +24,7 @@
     },
     {
       "groupName": "External Dependencies",
-      "matchDepTypes": ["dependencies""],
+      "matchDepTypes": ["dependencies"],
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
