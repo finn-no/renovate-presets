@@ -55,6 +55,8 @@
         "@fabric-ds",
         "@metrics",
         "@warp-ds",
+        "@m10s",
+        "@schibsted-nmp",
         "@borealis"
       ],
       "rangeStrategy": "pin",
