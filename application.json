@@ -16,6 +16,8 @@
         "@fabric-ds",
         "@metrics",
         "@warp-ds",
+        "@m10s",
+        "@schibsted-nmp",
         "@borealis"
       ],
       "schedule": ["before 6am on the first day of the month"],
@@ -32,6 +34,8 @@
         "@fabric-ds",
         "@metrics",
         "@warp-ds",
+        "@m10s",
+        "@schibsted-nmp",
         "@borealis"
       ],
       "schedule": ["after 6pm on sunday"],
@@ -55,6 +59,8 @@
         "@fabric-ds",
         "@metrics",
         "@warp-ds",
+        "@m10s",
+        "@schibsted-nmp",
         "@borealis"
       ],
       "rangeStrategy": "pin",
