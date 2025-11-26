@@ -1,10 +1,12 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>finn-no/renovate-presets:base",
     "group:linters",
     "group:postcss",
     ":widenPeerDependencies"
   ],
+  "minimumReleaseAge": "1 day",
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
