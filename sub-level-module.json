@@ -1,9 +1,11 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "packageRules": [
     {
       "groupName": "Dev Dependencies",
       "matchDepTypes": ["devDependencies"],
+      "minimumReleaseAge": "1 day",
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
@@ -20,6 +22,7 @@
     {
       "groupName": "External Dependencies",
       "matchDepTypes": ["dependencies"],
+      "minimumReleaseAge": "1 day",
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",

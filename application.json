@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
@@ -9,6 +10,7 @@
     {
       "groupName": "Dev Dependencies",
       "matchDepTypes": ["devDependencies"],
+      "minimumReleaseAge": "1 day",
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
@@ -27,6 +29,7 @@
     {
       "groupName": "External Dependencies",
       "matchDepTypes": ["dependencies"],
+      "minimumReleaseAge": "1 day",
       "excludePackagePrefixes": [
         "@finn-no",
         "@podium",
@@ -71,6 +74,7 @@
     },
     {
       "groupName": "Default version catalog dependencies",
+      "minimumReleaseAge": "1 day",
       "matchDepTypes": ["pnpm.catalog.default"],
       "schedule": ["after 6pm on sunday"],
       "rangeStrategy": "pin",
